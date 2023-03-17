@@ -1,0 +1,67 @@
+<html>
+<style>
+    .sub {
+        color: white;
+
+        background-color: rgb(70, 70, 238);
+        border: none;
+        border-radius: 5px;
+        width: 100px;
+        padding: 5px;
+
+
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .div {
+        position: absolute;
+        top: 100px;
+        text-align: center;
+    }
+
+    .h1s {
+        color: rgb(12, 78, 3);
+        font-size: 60;
+    }
+
+    .h3s {
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: rgb(97, 11, 177);
+        font-weight:bolder;
+    }
+
+    .img {
+        opacity: 0.4;
+    }
+</style>
+
+<body>
+   
+    <img class="img" src="https://jooinn.com/images/green-plants-82.jpg" width="100%"/>
+    <div class="div">
+        <h1 class="h1s">LEAF-TO-PLANT SAFEGUARDING SYSTEM</h1><br><br>
+        <form action="http://localhost:5000/uploader" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            </br><br>
+            <input type="submit" class="sub" />
+        </form>
+        <h3 class="h3s">Plant Disease Detected : {{ value }}</h3>
+        <br><br>
+        <a href="#" class="a">github link</a>
+    
+    </div>
+
+</body>
+
+</html>
